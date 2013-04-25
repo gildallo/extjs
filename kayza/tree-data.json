@@ -1,0 +1,31 @@
+{ 
+text: '.',        
+children: [{
+    text:'Cadastro',
+    expanded: false,
+    children:[{
+        text:'Inicial',
+        id:'janela-inicial',
+        leaf:true
+    },{
+        text:'Abas',
+        id:'janela-abas',
+        leaf:true
+    }]
+},{
+    text:'Relatórios',
+    children:[{
+        text:'Teste 2',
+        id:'janela-teste',
+        leaf:true
+    },{
+        text:'Teste 3',
+        id:'tabs-nested-layouts',
+        leaf:true
+    },{
+        text:'Teste 4',
+        id:'tabs-nested-layouts',
+        leaf:true
+    }]
+}]
+}
