@@ -7,8 +7,8 @@ children: [{
     text:'Cadastro',
     expanded: false,
     children:[{
-        text:'Inicial',
-        id:'gridusuario',
+        text:'Usuário',
+        id:'usuariosgrid',
         leaf:true
     }]
 },{

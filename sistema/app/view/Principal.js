@@ -1,3 +1,11 @@
+/**
+ *
+ * Desenvolvido por Gilcimar Dalló
+ * Email: gilcimar.dallo@gmail.com
+ * Data: Abril/2013
+ *
+ */
+
 var treePanel = Ext.create('Ext.tree.Panel', {
     id: 'tree-panel',
     title: 'Menus',
@@ -27,6 +35,7 @@ treePanel.getSelectionModel().on('select', function(selModel, record) {
         var tab = tabs.add({
             title: record.get('text'),
             closable: true,
+            autoScroll: true,
             items: [
                 {
                     xtype: record.getId()

@@ -2,9 +2,11 @@
  *
  * Interface de Login
  * Desenvolvido por Gilcimar Dalló
+ * Email: gilcimar.dallo@gmail.com
  * Data: Abril/2013
  *
  */
+
 Ext.define('Sistema.view.Login', {
     extend: 'Ext.window.Window',
     alias: 'widget.painellogin',

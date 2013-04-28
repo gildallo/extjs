@@ -1,3 +1,11 @@
+/**
+ *
+ * Desenvolvido por Gilcimar Dalló
+ * Email: gilcimar.dallo@gmail.com
+ * Data: Abril/2013
+ *
+ */
+
 Ext.define('Sistema.controller.Login', {
     extend: 'Ext.app.Controller',
     views: ['Login', 'CapsWarningTooltip'],
