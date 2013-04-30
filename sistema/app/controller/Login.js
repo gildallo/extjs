@@ -31,7 +31,7 @@ Ext.define('Sistema.controller.Login', {
             var values = loginForm.getValues();
             var ok;
             loginForm.submit({
-                url: 'php/login.php'          //Simula OK
+                url: 'login/autenticar'          //Simula OK
                         , method: 'POST'
                         , scope: this
                         , success: function(form, action) {

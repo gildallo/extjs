@@ -18,7 +18,7 @@ var treePanel = Ext.create('Ext.tree.Panel', {
     store: {
         proxy: {
             type: 'ajax',
-            url: 'php/menu.php'
+            url: 'menu/gerarmenu'
         }, root: {
             expanded: true
         }

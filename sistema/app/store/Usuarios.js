@@ -8,8 +8,8 @@ Ext.define('Sistema.store.Usuarios', {
         type: 'ajax',
         api: {
             create: 'php/criaContato.php', 
-            read: 'php/listaContatos.php',
-            update: 'php/atualizaContato.php',
+            read: 'usuarios/lista',
+            update: 'usuarios/atualiza',
             destroy: 'php/deletaContato.php',
         },
         reader: {
