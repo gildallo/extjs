@@ -16,9 +16,21 @@ class Usuarios_model extends CI_Model {
 
     function atualizaUsuarios($id,$options = array()) {
         $this->db->where('id', $id);
-        $this->db->update('contact', $options);
-        return $query->result();
+        $query = $this->db->update('contact', $options);
+        return $query;
     }
+
+    function cadastraUsuarios($options = array()) {
+        $query = $this->db->insert('contact', $options); 
+        return $query;
+    }
+
+    function deletaUsuarios($id) {
+        $this->db->where('id', $id);
+        $query = $this->db->delete('contact');
+        return $query;
+    }
+
 
 }
 

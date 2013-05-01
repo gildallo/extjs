@@ -7,10 +7,10 @@ Ext.define('Sistema.store.Usuarios', {
     proxy: {
         type: 'ajax',
         api: {
-            create: 'php/criaContato.php', 
+            create: 'usuarios/cadastra', 
             read: 'usuarios/lista',
             update: 'usuarios/atualiza',
-            destroy: 'php/deletaContato.php',
+            destroy: 'usuarios/deleta',
         },
         reader: {
             type: 'json',
