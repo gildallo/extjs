@@ -4,11 +4,12 @@ Ext.define('Sistema.controller.Usuarios', {
     models: ['Usuario'],
     views: ['Formulario', 'GridUsuarios'],
     refs: [{
-            ref: 'usuariosGrid',
-            selector: 'grid'
-        }
+        ref: 'usuariosGrid',
+        selector: 'grid'
+    }
     ],
     init: function() {
+        
         this.control({
             'usuariosgrid dataview': {
                 itemdblclick: this.editarContato
@@ -46,9 +47,9 @@ Ext.define('Sistema.controller.Usuarios', {
     },
     updateContato: function(button) {
         var win = button.up('window'),
-                form = win.down('form'),
-                record = form.getRecord(),
-                values = form.getValues();
+        form = win.down('form'),
+        record = form.getRecord(),
+        values = form.getValues();
 
         var novo = false;
 
@@ -70,9 +71,9 @@ Ext.define('Sistema.controller.Usuarios', {
     },
     deleteContato: function() {
         var me = this,
-                grid = me.getUsuariosGrid(),
-                store = grid.getStore(),
-                records = grid.getSelectionModel().getSelection();
+        grid = me.getUsuariosGrid(),
+        store = grid.getStore(),
+        records = grid.getSelectionModel().getSelection();
 
         if (records.length === 0) {
             Ext.Msg.alert('Erro', 'Nenhuma linha selecionada');

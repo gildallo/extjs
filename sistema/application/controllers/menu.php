@@ -18,6 +18,11 @@ class Menu extends CI_Controller {
                     text:'Cadastro',
                     expanded: false,
                     children:[{
+                        text:'Pessoa',
+                        id:'pessoasgrid',
+                        leaf:true
+                    },
+                    {
                         text:'Usuário',
                         id:'usuariosgrid',
                         leaf:true

@@ -14,11 +14,8 @@ Ext.Loader.setConfig({
 Ext.application({
     controllers: [
         'Login',
+        'Pessoas',
         'Usuarios'
-    ],
-    views: [
-        'Principal',
-        'Teste'
     ],
     autoCreateViewport: true,
     name: 'Sistema',

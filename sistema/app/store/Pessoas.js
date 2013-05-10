@@ -1,27 +1,27 @@
-Ext.define('Sistema.store.Usuarios', {
+Ext.define('Sistema.store.Pessoas', {
     extend: 'Ext.data.Store',
-    model: 'Sistema.model.Usuario',
+    model: 'Sistema.model.Pessoa',
     pageSize: 22,
     autoLoad: {start: 0, limit: 22},
     autoLoad: false,
     proxy: {
         type: 'ajax',
         api: {
-            create: 'usuarios/cadastra', 
-            read: 'usuarios/lista',
-            update: 'usuarios/atualiza',
-            destroy: 'usuarios/deleta',
+            create: 'pessoas/cadastra', 
+            read: 'pessoas/lista',
+            update: 'pessoas/atualiza',
+            destroy: 'pessoas/deleta',
         },
         reader: {
             type: 'json',
-            root: 'contatos',
+            root: 'pessoas',
             successProperty: 'success'
         },
         writer: {
             type: 'json',
             writeAllFields: true,
             encode: true,
-            root: 'contatos'
+            root: 'pessoas'
         }
     }
 });

@@ -40,9 +40,11 @@ class Usuarios extends CI_Controller {
 
         $id = $data->id;
         $dados = array(
-            'name' => $data->name,
-            'email' => $data->email,
-            'phone' => $data->phone
+            'pessoa_id' => $data->pessoa_id,
+            'data_criacao' => $data->data_criacao,
+            'usuario' => $data->usuario,
+            'senha' => $data->senha,
+            'status' => $data->status
         );
         
         $rs = $this->usuarios_model->atualizaUsuarios($id,$dados);
@@ -50,10 +52,12 @@ class Usuarios extends CI_Controller {
         echo json_encode(array(
 		"success" => "true",
 		"contatos" => array(
-			"id" => $data->id,
-			"name" => $data->name,
-			"email" => $data->email,
-			"phone" => $data->phone
+			'id' => $data->id,
+			'pessoa_id' => $data->pessoa_id,
+            'data_criacao' => $data->data_criacao,
+            'usuario' => $data->usuario,
+            'senha' => $data->senha,
+            'status' => $data->status
 		)
 	   ));
         
@@ -69,9 +73,11 @@ class Usuarios extends CI_Controller {
         $data = json_decode(stripslashes($info));
 
         $dados = array(
-            'name' => $data->name,
-            'email' => $data->email,
-            'phone' => $data->phone
+            'pessoa_id' => $data->pessoa_id,
+            'data_criacao' => $data->data_criacao,
+            'usuario' => $data->usuario,
+            'senha' => $data->senha,
+            'status' => $data->status
         );
 
         $rs = $this->usuarios_model->cadastraUsuarios($dados);
@@ -79,10 +85,12 @@ class Usuarios extends CI_Controller {
         echo json_encode(array(
         "success" => "true",
         "contatos" => array(
-            "id" => mysql_insert_id(),
-            "nome" => $data->name,
-            "email" => $data->email,
-            "phone" => $data->phone
+            'id' => mysql_insert_id(),
+            'pessoa_id' => $data->pessoa_id,
+            'data_criacao' => $data->data_criacao,
+            'usuario' => $data->usuario,
+            'senha' => $data->senha,
+            'status' => $data->status
         )
         ));
 

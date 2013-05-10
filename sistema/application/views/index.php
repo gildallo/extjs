@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -17,7 +17,7 @@
         <div id="viewport">
             <script type="text/javascript">document.getElementById('loading-msg').innerHTML = 'Carregando API...';</script>
             <script src="extjs/ext-all-debug.js"></script>
-            <script src="extjs/locale/ext-lang-pt_BR.js"></script>
+            <script src="extjs/locale/ext-lang-pt_BR.js" charset="UTF-8" ></script>
             <script type="text/javascript">document.getElementById('loading-msg').innerHTML = 'Inicializando...';</script>
             <script type="text/javascript" src="app.js"></script>
         </div>

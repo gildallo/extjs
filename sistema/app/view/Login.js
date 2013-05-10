@@ -32,8 +32,8 @@ Ext.define('Sistema.view.Login', {
                 items: [
                     {
                         xtype: 'textfield',
-                        name: 'l',
-                        id: 'l',
+                        name: 'txtUsuario',
+                        id: 'txtUsuario',
                         fieldLabel: 'Usuário',
                         allowBlank: false,
                         blankText: 'Usuário Obrigatório',
@@ -43,8 +43,8 @@ Ext.define('Sistema.view.Login', {
                     }, {
                         xtype: 'textfield',
                         inputType: 'password',
-                        name: 's',
-                        id: 's',
+                        name: 'txtSenha',
+                        id: 'txtSenha',
                         fieldLabel: 'Senha',
                         allowBlank: false,
                         blankText: 'Senha Obrigatória',

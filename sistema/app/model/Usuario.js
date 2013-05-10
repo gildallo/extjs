@@ -1,4 +1,4 @@
 Ext.define('Sistema.model.Usuario', {
     extend: 'Ext.data.Model',
-    fields: ['id', 'name', 'phone', 'email']
+    fields: ['id', 'pessoa_id', 'data_criacao', 'usuario', 'senha', 'status']
 });
